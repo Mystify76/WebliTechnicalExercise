@@ -1,0 +1,24 @@
+**/node_modules/**
+**/logs/**
+**/temp/**
+.DS_Store
+.idea
+e2e-screenshots
+.gitconfig
+/lerna-debug.log
+desktop.ini
+packages/**/*.tgz
+.npmrc
+tsconfig.tsbuildinfo
+package-lock.json
+temp
+
+# Yarn
+.yarn/*
+yarn-error.log
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+/packages/backend/tsconfig.build.tsbuildinfo

@@ -1,0 +1,9 @@
+config-overrides.js
+**/node_modules/**
+**/.storybook/**
+**/dist/**
+**/build/**
+**/temp/**
+**/logs/**
+*.config.js
+

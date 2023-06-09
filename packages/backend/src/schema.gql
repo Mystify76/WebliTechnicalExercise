@@ -1,0 +1,42 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Program {
+  id: String
+  name: String
+  mode: String
+  start: DateTime
+  end: DateTime
+  dimensions: [String!]
+  facilitators: [String!]
+  hobbies: [String!]
+  levelsOfCare: [String!]
+  attendees: [String!]
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type User {
+  userId: String!
+  name: String
+  gender: String
+  birthday: DateTime
+  moveInDate: DateTime
+  levelOfCare: String
+  hobbies: [String!]
+  roomNumber: String
+  recommendedPrograms: [Program!]
+}
+
+type Query {
+  findResidentById(id: String!): User!
+  findResidentByName(name: String!): [User!]!
+  getAllResidents: [User!]!
+  findProgramById(id: String!): Program!
+  findProgramByName(name: String!): [Program!]!
+  findProgramsWithHighResidents(min: Int!, limit: Int!): [Program!]!
+}

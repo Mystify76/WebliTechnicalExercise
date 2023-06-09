@@ -1,0 +1,30 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "src",
+    "baseUrl": "./src/",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "target": "ES2022",
+    "sourceMap": true,
+    "module": "NodeNext",
+    "lib": ["ESNext", "dom", "esnext.asynciterable"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "jsx": "react",
+    "types": ["node"],
+    "incremental": true,
+    "composite": true,
+    "strict": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["./src/**/*", "./src/data/backend.json"],
+  "exclude": ["node_modules", "_meta", "e2e", "dist"]
+}

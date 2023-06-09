@@ -1,0 +1,35 @@
+{
+  "name": "@welbitechexercise/root",
+  "version": "1.0.0",
+  "description": "David Gallant - Welbi Technical Exercise mono repo root",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "build:backend": "lerna run build:backend",
+    "build:frontend": "lerna run build:frontend",
+    "start": "lerna run start",
+    "start:frontend": "lerna run start:frontend",
+    "start:backend": "lerna run start:backend",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix"
+  },
+  "workspaces": [
+    "packages/frontend",
+    "packages/backend"
+  ],
+  "dependencies": {
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard-with-typescript": "latest",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "latest",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "lerna": "^7.0.0",
+    "lodash": "^4.17.21",
+    "prettier": "^2.8.8"
+  },
+  "packageManager": "yarn@3.6.0"
+}

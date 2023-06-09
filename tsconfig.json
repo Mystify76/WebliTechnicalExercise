@@ -1,0 +1,32 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "./scripts",
+    "baseUrl": ".",
+    "module": "commonjs",
+    "target": "ES2022",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "lib": ["ESNext", "dom", "esnext.asynciterable"],
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "jsx": "react",
+    "types": [
+      "node", "mocha", "chai"
+    ],
+    "incremental": true,
+    "composite": true,
+    "strict": true,
+    "strictNullChecks": true,
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "temp",
+    "*.old",
+  ]
+}
